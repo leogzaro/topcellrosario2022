@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2? family= Montserrat:wght@600 & display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px;
+    gap: 5em;
+
+}
+
+@media screen and (min-width: 720px) {
+    .grid {
+        grid-template-columns: 1fr 1fr 1fr
+    }
+}
+
+.grid div {
+    background: rgb(236, 231, 231);
+    padding: 1em;
+    margin: 1em;
+
+}
+
+.grid div:hover {
+    border: 3px solid #1ceb08;
+}
+
+
+.front__image {
+    width: 180px;
+    height: 200px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px;
+    gap: 5em;
+    padding: 1em;
+    margin: 1em;
+    justify-content: center;
+}
+
+@media screen and (min-width: 720px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.grid-container img:hover {
+    filter: opacity(0.9);
+    transform: scale(1.04);
+}
+
+
+
+section {
+    background-color: #e5f1e8;
+}
+
+.element1 {
+
+    width: 250px;
+    height: 250px;
+
+}
+
+.element2 {
+    width: 250px;
+    height: 250px;
+}
+
+.element3 {
+    width: 250px;
+    height: 250px;
+}
+
+.element4 {
+    width: 250px;
+    height: 250px;
+}
+
+.element5 {
+    width: 250px;
+    height: 250px;
+}
+
+.element6 {
+    width: 250px;
+    height: 250px;
+}
+
+.element7 {
+    width: 250px;
+    height: 250px;
+}
+
+.element8 {
+    width: 250px;
+    height: 250px;
+}
+
+.element9 {
+    width: 250px;
+    height: 250px;
+}
+
+header {
+
+    background-image: linear-gradient(to right, #15af06, #17bf23, #17cf38, #14df4a, #0df05c);
+    width: 99%;
+    border-radius: 10px;
+    font-size: 40px;
+    border: 5px solid black;
+    margin: 5px;
+   
+}
+
+
+a {
+    text-decoration: none;
+    color: rgb(6, 117, 12);
+
+
+}
+
+.Volver {
+    color: rgb(2, 32, 11);
+    display: block;
+
+}
+
+.cellphones-image {
+    width: 500px;
+    height: 200px;
+    padding: 5px;
+    margin: 5px;
+   
+}
+
+@media screen and (min-width: 720px) {
+    .cellphones-image {
+
+
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+
+
+.logo  {
+    color: beige;
+    text-decoration: none;
+    font-size: 80px;
+    font-style: unset;
+    
+    
+}
+
+
+
+
+footer p {
+    background-image: linear-gradient(to right, #1ceb08, #19ec20, #17ee2e, #15ef39, #14f043);
+    border-radius: 10px;
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+}
+
+main p {
+    background: rgb(7, 187, 7);
+    font-size: 30px;
+    animation-name: animation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes animation{
+    0%{
+        transform: scale(1);
+
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+
+    }
+}
+
+
+.menu {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.text-center-two {
+    text-align: center;
+    border-radius: 10px;
+    margin: 5px;
+    
+}
+    
+
+h1 {
+    background-image: linear-gradient(to right, #1ceb08, #19ec20, #17ee2e, #15ef39, #14f043);
+    border-radius: 10px;
+    
+
+}
+
+
+.cardProduct {
+    width: 100%;
+    max-width: 300px;
+    display: inline-block;
+    border-color: rgb(92, 243, 92);
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+
+}
+
+.cardProduct__image {
+    width: 100%;
+    height: 300px;
+
+
+
+}
+
+.cardProduct__description {
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+.cardProduct__description__price {
+    margin-top: 10px;
+}
+
+.cardProduct__description__text {
+    margin-top: 30pxpx;
+    margin-bottom: 30pxpx;
+    text-align: center;
+
+
+}
+
+.card1product__description__action {
+    background-color: rgb(135, 135, 226);
+    display: inline-block;
+    width: max-content;
+    border-radius: 5px;
+    padding: 5px;
+    font-weight: bold;
+    color: beige;
+    text-align: center;
+
+}
