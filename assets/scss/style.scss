@@ -25,15 +25,21 @@ $background: rgb(7, 187, 7);
     }
 }
 
-.grid div {
-    background: rgb(236, 231, 231);
-    padding: 1em;
-    margin: 1em;
+.grid {
+    div {
+        background: rgb(236, 231, 231);
+        padding: 1em;
+        margin: 1em;
 
-}
+        &:hover {
+            border: 3px solid #1ceb08;
 
-.grid div:hover {
-    border: 3px solid #1ceb08;
+
+        }
+
+    }
+
+
 }
 
 
@@ -70,7 +76,7 @@ section {
 }
 
 .element1 {
-    
+
     width: 250px;
     height: 250px;
 }
