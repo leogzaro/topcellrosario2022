@@ -5,17 +5,14 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+
 }
-
-$background-image: linear-gradient(to right, #15af06, #17bf23, #17cf38, #14df4a, #0df05c);
-$background: rgb(7, 187, 7);
-
 
 .grid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 200px;
-    gap: 5em;
+    grid-template-rows: 250px;
+    gap: 1em;
 
 }
 
@@ -32,7 +29,7 @@ $background: rgb(7, 187, 7);
         margin: 1em;
 
         &:hover {
-            border: 3px solid #1ceb08;
+            border: 3px solid #11250f;
 
 
         }
@@ -41,6 +38,7 @@ $background: rgb(7, 187, 7);
 
 
 }
+
 
 
 .front__image {
@@ -79,11 +77,20 @@ section {
 
     width: 250px;
     height: 250px;
+
 }
 
 
 
+
 header {
+
+    width: 99%;
+    margin: 5px;
+    font-size: 40px;
+}
+
+/* header {
 
     background-image: $background-image;
     width: 99%;
@@ -91,8 +98,8 @@ header {
     font-size: 40px;
     border: 5px solid black;
     margin: 5px;
-
-}
+   
+}*/
 
 
 a {
@@ -144,19 +151,64 @@ a {
 
 }
 
+.footer-text {
+    color: #e5f1e8;
+    display: flex;
+    align-items: center;
+}
+
+
+footer {
+
+
+    width: 100%;
+    margin-top: 50px;
+    padding-top: 100px;
+    font-size: 40px;
 
 
 
-footer p {
-    background-image: linear-gradient(to right, #1ceb08, #19ec20, #17ee2e, #15ef39, #14f043);
+}
+
+
+footer .sociales {
+    background: #282b28;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     border-radius: 10px;
-    font-size: 20px;
-    font-style: italic;
-    text-align: center;
+    padding: 15px 10px;
+
+}
+
+footer .sociales a {
+    font-size: 35px;
+    color: rgb(230, 223, 223);
+    transition: all .5s ease;
+}
+
+footer .sociales .facebook:hover {
+    transform: scale(1.3, 1.3);
+    color: #382CA9;
+}
+
+footer .sociales .twitter:hover {
+    transform: scale(1.3, 1.3);
+    color: #3AC9C1;
+}
+
+footer .sociales .instagram:hover {
+    transform: scale(1.3, 1.3);
+    color: #FD1F1F;
+}
+
+footer .sociales .snapchat:hover {
+    transform: scale(1.3, 1.3);
+    color: #d9ee1e;
 }
 
 main p {
-    background: $background;
+
     font-size: 30px;
     animation-name: animation;
     animation-duration: 3s;
@@ -196,14 +248,26 @@ main p {
     text-align: center;
     border-radius: 10px;
     margin: 5px;
-
+    background-color: rgb(59, 57, 57);
+    color: #e0e7e2;
 }
 
 
 h1 {
-    background-image: linear-gradient(to right, #1ceb08, #19ec20, #17ee2e, #15ef39, #14f043);
-    border-radius: 10px;
 
+    border-radius: 10px;
+    text-align: center;
+    background-color: darkcyan;
+
+}
+
+.texto-nosotros {
+    padding: 80px;
+    background-color: #e1e9e3;
+    text-align: center;
+    font-size: xx-large;
+    margin: 80px;
+    width: 85%;
 
 }
 
@@ -212,7 +276,7 @@ h1 {
     width: 100%;
     max-width: 300px;
     display: inline-block;
-    border-color: rgb(92, 243, 92);
+    border-color: darkcyan;
     border-style: solid;
     border-width: 5px;
     border-radius: 10px;
