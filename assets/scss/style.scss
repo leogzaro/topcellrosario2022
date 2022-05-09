@@ -90,18 +90,6 @@ header {
     font-size: 40px;
 }
 
-/* header {
-
-    background-image: $background-image;
-    width: 99%;
-    border-radius: 10px;
-    font-size: 40px;
-    border: 5px solid black;
-    margin: 5px;
-   
-}*/
-
-
 a {
     text-decoration: none;
     color: rgb(6, 117, 12);
@@ -181,30 +169,35 @@ footer .sociales {
 
 }
 
+
+
 footer .sociales a {
     font-size: 35px;
     color: rgb(230, 223, 223);
     transition: all .5s ease;
 }
 
-footer .sociales .facebook:hover {
+@mixin iconos-redes ($color) {
     transform: scale(1.3, 1.3);
-    color: #382CA9;
+    color: $color;
+}
+
+footer .sociales .facebook:hover {
+    @include iconos-redes(#382CA9);
 }
 
 footer .sociales .twitter:hover {
-    transform: scale(1.3, 1.3);
-    color: #3AC9C1;
+    @include iconos-redes(#3ac9c1);
+    
 }
 
 footer .sociales .instagram:hover {
-    transform: scale(1.3, 1.3);
-    color: #FD1F1F;
+    @include iconos-redes(#fd1f1f);
+    
 }
 
 footer .sociales .snapchat:hover {
-    transform: scale(1.3, 1.3);
-    color: #d9ee1e;
+    @include iconos-redes(#d9ee1e);
 }
 
 main p {
