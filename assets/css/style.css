@@ -64,7 +64,8 @@ a {
   display: block; }
 
 .iframe {
-  width: 100%; }
+  width: 100%;
+  margin-top: 50px; }
 
 .Volver {
   color: #02200b;
